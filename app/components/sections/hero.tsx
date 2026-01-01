@@ -11,7 +11,7 @@ export default function HeroComponent() {
           Proizvodimo i prodajemo domaci krompir, uzgojen sa paznjom i iskustvom
         </p>
         <div>
-          <img src="/images/hero_potatoes.png" alt="hero-image" />
+          <img src="/images/hero_potatoes.jpg" alt="hero-image" />
         </div>
       </div>
     </div>
