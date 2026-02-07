@@ -1,17 +1,20 @@
 export default function Header() {
   return (
-    <div className="flex items-center justify-between flex-row bg-gray-400 p-2 w-full">
-      <div className="ml-20">
-        <p>logo</p>
+    <nav className="relative  flex items-center justify-between px-10 py-6">
+      <div className="text-white font-semibold text-xl tracking-wide cursor-pointer">
+        LOGO
       </div>
-      <div className="flex items-center flex-row mr-10">
-        <ul className="flex items-center flex-row p-2">
-          <li className="p-2">o nama</li>
-          <li className="p-2">sorte</li>
-          <li className="p-2">cenovnik</li>
-          <li className="p-2">porudzbine</li>
-        </ul>
-      </div>
-    </div>
+      <ul className="flex gap-6 text-white">
+        <li className="cursor-pointer transition-opacity duration-200 hover:opacity-80">
+          Pocetna
+        </li>
+        <li className="cursor-pointer transition-opacity duration-200 hover:opacity-80">
+          Proizvodi
+        </li>
+        <li className="cursor-pointer transition-opacity duration-200 hover:opacity-80">
+          Kontakt
+        </li>
+      </ul>
+    </nav>
   );
 }
