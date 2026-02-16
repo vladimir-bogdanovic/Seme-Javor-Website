@@ -1,5 +1,13 @@
-import HeroComponent from "./components/sections/hero/hero";
+import WhyUsSection from "@/components/home/why_us/page";
+import HeroComponent from "../components/home/hero/hero";
+import BestSellingSortsComponent from "@/components/home/sorte/page";
 
 export default function Home() {
-  return <HeroComponent />;
+  return (
+    <div>
+      <HeroComponent />
+      <WhyUsSection />
+      <BestSellingSortsComponent />
+    </div>
+  );
 }

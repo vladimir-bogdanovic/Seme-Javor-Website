@@ -7,6 +7,19 @@ export type Krompir = {
   cena: number;
 };
 
+export const Filters = {
+  kalibraza: ["28-35", "35-55"],
+  kategorija: ["Prva reprodukcija", "Original"],
+  boja: ["crveni", "beli"],
+};
+
+export type FilterValue = "28-35" | "35-55" | "crveni" | "beli";
+
+export type FilterOption = {
+  value: FilterValue;
+  label: string;
+};
+
 export const SorteKrompira: Krompir[] = [
   {
     id: 1,

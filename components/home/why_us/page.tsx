@@ -2,7 +2,7 @@ import WhyUsCard from "../../ui/why_us_card";
 
 export default function WhyUsSection() {
   return (
-    <div className="flex justify-center items-center flex-wrap">
+    <div className="flex justify-center items-center flex-wrap pt-[100vh]">
       <p className="text-3xl uppercase tracking-widest text-[#8E745C] font-medium p-3 mb-2 mt-2 w-80">
         Zasto bas nas krompir?
       </p>

@@ -1,5 +1,12 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --hero-background: #c0a892;
-}
+/* :root {
+  --color-primary: #344443;
+  --color-secondary: #234244;
+  --color-sorte-background: #f7f7f7;
+  --color-card-background: #fafafa;
+  --color-filter-background: #eeeeee;
+  --color-card-grey-text: #8d8d8d;
+} */
