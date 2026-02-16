@@ -9,12 +9,6 @@ import PaginationComponent from "../ui/pagination";
 const allPotaotoes = SorteKrompira;
 
 export default function ProizvodiComponent() {
-  // type ActiveFilters = {
-  //   boja: Krompir["boja"][];
-  //   kategorija: Krompir["kategorija"][];
-  //   kalibraza: Krompir["kalibraza"][];
-  // };
-
   const [potatoes, setPotatoes] = useState<Krompir[]>(allPotaotoes);
   const [activePage, setActivePage] = useState<number>(1);
   const [openDropdowns, setOpenDropdowns] = useState<Set<string>>(new Set());
@@ -61,26 +55,6 @@ export default function ProizvodiComponent() {
     setPotatoes(filtered);
     setActivePage(1);
   }, [selectedValues]);
-
-  // const [activeFilters, setActiveFilters] = useState<ActiveFilters>({
-  //   boja: [],
-  //   kategorija: [],
-  //   kalibraza: [],
-  // });
-
-  // function toggleFilter<K extends keyof ActiveFilters>(
-  //   filterKey: K, //K ---> mora biti boja,kalibraz ili kategorija
-  //   value: ActiveFilters[K][number], // ActiveFilters je type koji smo mi napravili, ActiveFilters[K] nam daje jedan od nizova u ActiveFilters i kada dodamo number onda nam to vraca jednu vrednost iz tog niza
-  // ) {
-  //   setActiveFilters((prev) => {
-  //     const values = prev[filterKey];
-  //     const newValues = values.includes(value)
-  //       ? values.filter((v) => v !== value) // ukloni
-  //       : [...values, value]; // dodaj
-  //     console.log(values, newValues);
-  //     return { ...prev, [filterKey]: newValues }; // ...prev  kopiram celo prethodno stanje filtera i na mestu boje kalibraze... azuriramo jedan filter
-  //   });
-  // }
 
   function toggleDropdown(key: string) {
     setOpenDropdowns((prev) => {

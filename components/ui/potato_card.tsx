@@ -1,4 +1,7 @@
+import Link from "next/link";
+
 interface PotatoCardProps {
+  id: number;
   kalibraza: string;
   sorta: string;
   cena: number;
@@ -6,6 +9,7 @@ interface PotatoCardProps {
 }
 
 export default function PotatoCardComponent({
+  id,
   boja,
   kalibraza,
   sorta,
@@ -13,12 +17,11 @@ export default function PotatoCardComponent({
 }: PotatoCardProps) {
   return (
     <div className="flex items-center flex-col w-[268px] h-[492px] m-5 bg-white br-10 rounded-2xl">
+      <Link className="py-2" href={`/proizvodi/${id}`}>
+        Detalji
+      </Link>
       <div className="w-[268px] h-[240px] bg-cardBackground flex items-center justify-center rounded-t-2xl">
-        <img
-          className="mb-10 w-[218px] h-[256px]"
-          src="/images/kenebec.png"
-          alt="potato-image"
-        />
+        <img src="/images/kenebec.png" alt="potato-image" />
       </div>
       <div className="flex mt-4 mr-20 flex-col">
         <div>

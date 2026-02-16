@@ -7,9 +7,9 @@ export default function Header() {
         LOGO
       </div>
       <ul className="flex gap-6 text-white">
-        <HeaderNavList label="Pocetna" />
-        <HeaderNavList label="Proizvodi" />
-        <HeaderNavList label="Kontakt" />
+        <HeaderNavList url="/" label="Pocetna" />
+        <HeaderNavList url="/proizvodi" label="Proizvodi" />
+        <HeaderNavList url="/kontakt" label="Kontakt" />
       </ul>
     </header>
   );
