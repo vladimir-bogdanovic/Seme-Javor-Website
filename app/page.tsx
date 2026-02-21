@@ -1,6 +1,6 @@
-import WhyUsSection from "@/components/home/why_us/page";
-import HeroComponent from "../components/home/hero/hero";
-import BestSellingSortsComponent from "@/components/home/sorte/page";
+import WhyUsSection from "@/components/home/WhyUs";
+import HeroComponent from "@/components/home/Hero";
+import BestSellingSortsComponent from "@/components/home/Sorts";
 
 export default function Home() {
   return (

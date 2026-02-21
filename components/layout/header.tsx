@@ -10,6 +10,7 @@ export default function Header() {
         <HeaderNavList url="/" label="Pocetna" />
         <HeaderNavList url="/proizvodi" label="Proizvodi" />
         <HeaderNavList url="/kontakt" label="Kontakt" />
+        <HeaderNavList url="/admin" label="Admin" />
       </ul>
     </header>
   );

@@ -1,7 +1,7 @@
 "use client";
 
 import { FilterOption } from "@/data/potato_data";
-import PotatoCardComponent from "../../ui/potato_card";
+import PotatoCardComponent from "../ui/potato_card";
 
 export default function BestSellingSortsComponent() {
   const filterOptions: FilterOption[] = [

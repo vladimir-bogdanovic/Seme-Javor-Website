@@ -1,4 +1,4 @@
-import WhyUsCard from "../../ui/why_us_card";
+import WhyUsCard from "../ui/why_us_card";
 
 export default function WhyUsSection() {
   return (
