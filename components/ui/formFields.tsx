@@ -1,6 +1,7 @@
-type FieldsProps = {
+type RegularFieldsProps = {
   title: string;
-  placeholder: string;
+  placeholder?: string;
+
   getInputValue: (val: string) => void;
 };
 
@@ -8,7 +9,7 @@ export default function FormFieldsComponent({
   title,
   placeholder,
   getInputValue,
-}: FieldsProps) {
+}: RegularFieldsProps) {
   return (
     <div className="flex justify-between w-full max-w-[400px] m-3">
       <label
@@ -17,10 +18,10 @@ export default function FormFieldsComponent({
       >
         {title}
       </label>
+
       <input
         onChange={(e) => getInputValue(e.target.value)}
-        id={title}
-        className="border-black bg-white text-center w-full bg-gray-400 p-2 rounded-r-xl border-2"
+        className="border-black bg-white text-center w-full p-2 rounded-r-xl border-2"
         type="text"
         placeholder={placeholder}
       />

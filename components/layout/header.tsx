@@ -11,9 +11,8 @@ export default function Header() {
         <HeaderNavList url="/proizvodi" label="Proizvodi" />
         <HeaderNavList url="/kontakt" label="Kontakt" />
         <HeaderNavList url="/admin" label="Admin" />
+        <HeaderNavList url="/testiranje" label="Tesiranje" />
       </ul>
     </header>
   );
 }
-
-// absolute top-0 left-0

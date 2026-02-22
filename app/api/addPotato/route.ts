@@ -4,15 +4,9 @@ import { NextResponse } from "next/server";
 export async function POST(req: Request) {
   const { kalibraza, boja, kategorija, cena, sorta } = await req.json();
 
-  if (
-    !sorta?.trim() ||
-    !kalibraza ||
-    !kategorija?.trim() ||
-    !boja?.trim() ||
-    !cena
-  )
+  if (!sorta?.trim() || !kalibraza || !kategorija || !boja || !cena.trim())
     return NextResponse.json(
-      { error: "ime sorte je obavezno" },
+      { error: "sva polja su obavezna" },
       { status: 400 },
     );
 

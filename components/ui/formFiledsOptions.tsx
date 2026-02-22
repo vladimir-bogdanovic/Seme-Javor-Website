@@ -5,13 +5,13 @@ type FilterOptions = {
 
 type FieldsProps = {
   title: string;
-  filter: FilterOptions[];
+  options: { value: string; label: string }[];
   getOptionValue: (val: string) => void;
 };
 
-export default function FormFieldsComponent({
+export default function FormFieldsOptionComponent({
   title,
-  filter,
+  options,
   getOptionValue,
 }: FieldsProps) {
   return (
@@ -28,14 +28,12 @@ export default function FormFieldsComponent({
         id={title}
       >
         <option value="">Izaberite opciju</option>
-        {filter.map((options: FilterOptions) => (
-          <option key={options.label} value={options.value}>
-            {options.value}
+        {options.map((option: FilterOptions) => (
+          <option key={option.label} value={option.value}>
+            {option.value}
           </option>
         ))}
       </select>
     </div>
   );
 }
-
-// state u forme
