@@ -5,6 +5,7 @@ export type Krompir = {
   kategorija: "Prva reprodukcija" | "Original";
   boja: "crveni" | "beli";
   cena: number;
+  popularnost ?: number
 };
 
 export const Filters = {
@@ -76,6 +77,7 @@ export const SorteKrompira: Krompir[] = [
     kategorija: "Prva reprodukcija",
     boja: "crveni",
     cena: 60,
+    popularnost: 88
   },
   {
     id: 8,
